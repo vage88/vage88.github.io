@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Игра престолов</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Игра престолов">
+    <meta name="keywords" content="сериалы, игра престолов">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ваге">
+
+
+
+    <script src="11.js"></script>
+    <link href="888.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<main>
+    <article>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="Game of thrones.html">
+                <img src="333.png" style="width:150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pers.html">Актерский состав</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Тест</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto" id="55">
+                    <p id="text0" style="display: none"></p>
+                    <a href="#" id="show66" onclick="return false" class="btn btn-light" data-toggle="modal"
+                        data-target="#myModal">Вход</a>
+                    <a href="#" style="display: none" id="hide0" onclick="return false" class="btn btn-light">Выход</a>
+
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            var c = 0;
+
+            function Engine(num) {
+                if (num == 0) { c++ }
+                else { var obj = document.getElementById((num)); obj.innerHTML = (num) }
+            }
+            function ca() {
+                // Находим нужный элемент по ID
+                var obj = document.getElementById('Txt');
+                // Меняем его содержимое
+                obj.innerHTML = (x);
+            }
+            function show(divid) {
+                if (document.getElementById(divid).style.display == "none") {
+                    document.getElementById(divid).style.display = "inline";
+                }
+                else {
+                    document.getElementById(divid).style.display = "none";
+                }
+            }
+            function otv() {
+                var score = c; x = score
+                {
+                    if (score <= 100) {
+                        document.getElementById(divid = "otv1").style.display = "inline";
+                    }
+
+                    {
+                        if (score >= 100 && score <= 110) {
+                            document.getElementById(divid = "otv2").style.display = "inline";
+                        }
+
+                        {
+                            if (score >= 110 && score <= 200) {
+                                document.getElementById(divid = "otv3").style.display = "inline";
+                            }
+
+                            {
+                                if (score >= 210 && score <= 300) {
+                                    document.getElementById(divid = "otv4").style.display = "inline";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+
+
+        <div class="container">
+            <div class="container">
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Вход в аккаунт</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form action="#" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="uname">Имя пользователя:</label>
+                                        <input type="text" class="form-control" id="uname"
+                                            placeholder="Введите имя поьзователя:" name="uname" required>
+                                        <div class="valid-feedback">Выполнено</div>
+                                        <div class="invalid-feedback">Заполните поле*</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Пароль:</label>
+                                        <input type="password" class="form-control" id="pwd"
+                                            placeholder="Введите пароль:" name="pswd" required>
+                                        <div class="valid-feedback">Выполнено</div>
+                                        <div class="invalid-feedback">Заполните поле*</div>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="remember"
+                                                required>Запомнить меня
+                                            <div class="valid-feedback">Выполнено</div>
+                                            <div class="invalid-feedback">Заполните поле*</div>
+                                        </label>
+                                    </div>
+                                    <a href="#55"><button type="button" class="btn btn-primary" data-dismiss="modal"
+                                            id="show0">Войти</button></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container-fluid"><br><br><br>
+                <div id="go">
+                    <h1 class="display-4" align="center">Зима близко!</h1>
+                    <div align="center">
+                        <form id="go">
+                            <p>Премьера заключительного сезона сериала "Игра престолов" (Game of Thrones), которая
+                                соcтоялась 14 апреля,
+                                точно войдет в число самых грандиозных и значимых телесобытий года. Выхода финальных
+                                эпизодов фэнтезийной саги на
+                                экраны ждут ее поклонники по всему миру. Создатели проекта на протяжении многих месяцев
+                                подогревали интерес к этому
+                                событию и только интриговали общественность, лишь делая намеки на то, чем завершится
+                                сериал. Ну а мы предлагаем вам
+                                вспомнить предыдущие семь сезонов"Игры престолов" и проверить самих себя, насколько
+                                хорошо вы их помните!
+                            </p>
+                            <button type="button" class="btn btn-primary btn-lg"
+                                onClick="show('test');show('go')">Пройти
+                                тест</button><br><br>
+                            
+                        </form>
+                        <br>
+                    </div>
+                    <p align="center"><img src="hh.jpg" style="width: 300px">
+                        <p><br><br>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br>
+
+        <!--1-->
+        <div id="test" style="DISPLAY:none" align="center">
+            <form id="vop1">
+                <br>
+                <P align="center" class="display-4">Вопрос 1 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" style="width:10%"></div>
+                </div><br>
+                <p><img src="5555.jpg" height="200"></p>
+                <p class="display-5">Каждому из трех своих драконов Дейенерис дала имя. Какое из нижеперечисленных
+                    слов не является именем?</p>
+                <a id="1" class="display-5" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">
+                    <button type="button" class="btn btn-outline-primary">Дрогон</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">
+                    <button type="button" class="btn btn-outline-primary">Дракарис</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer" onClick="Engine(this.id);show('test1');show('test')">
+                    <button type="button" class="btn btn-outline-primary">Рейгаль</button></a><br><br>
+            </form>
+        </div>
+
+        <!--2-->
+        <div id="test1" style="DISPLAY:none" align="center">
+            <form id="vop2">
+                <br>
+                <P align="center" class="display-4">Вопрос 2 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" style="width:20%"></div>
+                </div><br>
+                <p><img src="544.jpg" height="200"></p>
+                <p class="display-5">Как зовут лютоволка Джона Сноу?</p>
+
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test2');show('test1')">
+                    <button type="button" class="btn btn-outline-secondary">Нимерия</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test2');show('test1')">
+                    <button type="button" class="btn btn-outline-secondary">Лето</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test2');show('test1')">
+                    <button type="button" class="btn btn-outline-secondary">Призрак</button></a><br><br>
+            </form>
+        </div>
+        <!--3-->
+        <div id="test2" style="DISPLAY:none" align="center">
+            <form id="vop3">
+                <br>
+                <P align="center" class="display-4">Вопрос 3 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:30%"></div>
+                </div><br>
+                <p><img src="9898.jpg" height="200"></p>
+                <p class="display-5">Как зовут данного персонажа?</p>
+
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test3');show('test2')">
+                    <button type="button" class="btn btn-outline-success">Красный Вождь</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test3');show('test2')">
+                    <button type="button" class="btn btn-outline-success">Черный Тигренок</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test3');show('test2')">
+                    <button type="button" class="btn btn-outline-success">Серый Червь</button></a><br><br>
+            </form>
+        </div>
+        <!--4-->
+        <div id="test3" style="DISPLAY:none" align="center">
+            <form id="vop4">
+                <br>
+                <P align="center" class="display-4">Вопрос 4 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:40%"></div>
+                </div><br>
+                <p><img src="322.jpg" height="200"></p>
+                <p class="display-5">Кто изображен выше?</p>
+
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test4');show('test3')">
+                    <button type="button" class="btn btn-outline-info">Санса</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test4');show('test3')">
+                    <button type="button" class="btn btn-outline-info">Никто</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test4');show('test3')">
+                    <button type="button" class="btn btn-outline-info">Миссандея</button></a><br><br>
+            </form>
+        </div>
+        <!--5-->
+        <div id="test4" style="DISPLAY:none" align="center">
+            <form id="vop5">
+                <br>
+                <P align="center" class="display-4">Вопрос 5 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:50%"></div>
+                </div><br>
+                <p><img src="356.jpg" height="200"></p>
+                <p class="display-5">Кто создал белых ходоков?</p>
+
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test5');show('test4')">
+                    <button type="button" class="btn btn-outline-warning">Дети леса</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test5');show('test4')">
+                    <button type="button" class="btn btn-outline-warning">Владыка света</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test5');show('test4')">
+                    <button type="button" class="btn btn-outline-warning">Первые люди</button></a><br><br>
+            </form>
+        </div>
+        <!--6-->
+        <div id="test5" style="DISPLAY:none" align="center">
+            <form id="vop6">
+                <br>
+                <P align="center" class="display-4">Вопрос 6 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar" style="width:60%"></div>
+                </div><br>
+                <p><img src="4444.jpg" height="200"></p>
+                <p class="display-5">Любимый напиток Тириона?</p>
+
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test6');show('test5')">
+                    <button type="button" class="btn btn-outline-danger">Коньяк</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test6');show('test5')">
+                    <button type="button" class="btn btn-outline-danger">Вино</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test6');show('test5')">
+                    <button type="button" class="btn btn-outline-danger">Ром</button></a><br><br>
+            </form>
+        </div>
+        <!--7-->
+        <div id="test6" style="DISPLAY:none" align="center">
+            <form id="vop7">
+                <br>
+                <P align="center" class="display-4">Вопрос 7 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                </div><br>
+                <p><img src="1.jpg" height="200"></p>
+                <p class="display-5">Как прозвали Тормунда?</p>
+
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test7');show('test6')">
+                    <button type="button" class="btn btn-outline-dark">Великанья смерть</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test7');show('test6')">
+                    <button type="button" class="btn btn-outline-dark">Молоко великанши</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test7');show('test6')">
+                    <button type="button" class="btn btn-outline-dark">Бриенна</button></a><br><br>
+            </form>
+        </div>
+        <!--8-->
+        <div id="test7" style="DISPLAY:none" align="center">
+            <form id="vop8">
+                <br>
+                <P align="center" class="display-4">Вопрос 8 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div><br>
+                <p><img src="2.jpg" height="200"></p>
+                <p class="display-5">Как называется данная местность?</p>
+
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test8');show('test7')">
+                    <button type="button" class="btn btn-outline-info">Хайгарден</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test8');show('test7')">
+                    <button type="button" class="btn btn-outline-info">Ланниспорт</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test8');show('test7')">
+                    <button type="button" class="btn btn-outline-info">Королевская гавань</button></a><br><br>
+            </form>
+        </div>
+        <!--9-->
+        <div id="test8" style="DISPLAY:none" align="center">
+            <form id="vop9">
+                <br>
+                <P align="center" class="display-4">Вопрос 9 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width:90%"></div>
+                </div>
+                <p><img src="5555555.jpg" height="200"></p>
+                <p class="display-5">Как назвали битву, в которой Джон освободил север?</p>
+
+                <a id="0" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test9');show('test8')">
+                    <button type="button" class="btn btn-outline-primary">Битва Бастардов</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test9');show('test8')">
+                    <button type="button" class="btn btn-outline-primary">Битва за Винтерфелл</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer"
+                    onClick="Engine(this.id);show('test9');show('test8')">
+                    <button type="button" class="btn btn-outline-primary">Битва на Черноводной</button></a><br><br>
+            </form>
+        </div>
+        <!--10-->
+        <div id="test9" style="DISPLAY:none" align="center">
+            <form id="vop10">
+                <br>
+                <P align="center" class="display-4">Вопрос 10 из 10<br></p>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width:100%"></div>
+                </div><br>
+                <p><img src="222.jpg" height="200"></p>
+                <p class="display-5">На протяжении какого времени Санса хранила секрет Джона?</p>
+
+                <a id="1" class="display-5" style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test9')">
+                    <button type="button" class="btn btn-outline-success">10 лет</button></a><br><br>
+                <a id="1" class="display-5" style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test9')">
+                    <button type="button" class="btn btn-outline-success">15 лет</button></a><br><br>
+                <a id="0" class="display-5" style="cursor:pointer" onClick="Engine(this.id);otv();ca();show('test9')">
+                    <button type="button" class="btn btn-outline-success">2 минуты</button></a><br><br>
+            </form>
+        </div>
+
+
+
+
+
+        <div id="otv1" style="DISPLAY:none">
+            <form id="ot1"><br><br><br>
+                <P align="center" class="display-4"><strong>Тест успешно пройден!</strong><br><br>
+                    <a style="color:#404040" id="Txt">0</a> балла(ов) из 10
+                    <p align="center"><a id="Txt1"></a><a id="Txt2"></a><a id="Txt3"></a><a id="Txt4"></a><a
+                            id="Txt5"></a><a id="Txt6"></a><a id="Txt7"></a><a id="Txt8"></a><a id="Txt9"></a><a
+                            id="Txt10"></a></p>
+                    <p align="center"><button type="button" class="btn btn-success btn-lg"
+                            onClick="show('test');show('otv1')">Пройти повторно</button>
+                        <p> <br>
+                            <p align="center"><button type="button" class="btn btn-primary btn-lg"
+                                    onClick="addRow('tbl')">Сохранить результат</button>
+                                <p> <br>
+                                    <p align="center"><a href="#46"><button type="button"
+                                                class="btn btn-warning btn-lg">Посмотреть результаты</button></a>
+                                        <p> <br>
+                                            <div class="container" id="46">
+                                                <h2 class="display-4" align="center">Результаты</h2>
+                                                <table class="table" id="tbl">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>Имя пользователя</th>
+                                                            <th>Результат</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <p id="555"></p>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                            </F><br><br>
+            </form>
+        </div>
+
+
+
+
+
+        <script type="text/javascript">
+            function addRow(id) {
+                var d = new Date("October 13, 2014 11:13:00")
+                if (!document.getElementById("uname").value) {
+                    window.alert("Вы не вошли на сайт!")
+                }
+                else {
+                    var joj = localStorage.setItem('Result', document.getElementById('Txt').textContent);
+                    var kov = localStorage.setItem('UserName', document.getElementById("uname").value);
+
+                    var tbody = document.getElementById(id).getElementsByTagName("tbody")[0];
+                    var row = document.createElement("tr")
+                    var td1 = document.createElement("td")
+
+                    var td2 = document.createElement("td")
+                    td1.appendChild(document.createTextNode("vage"))
+                    td2.appendChild(document.createTextNode("9"))
+                    row.appendChild(td1);
+                    row.appendChild(td2);
+                    tbody.appendChild(row);
+
+                }
+            }
+        </script><br><br>
+
+
+
+
+
+    </article>
+</main>
+
+<script>$(document).ready(function () {
+        function hidetext() {
+            $("#text0").hide(10, function () {
+                $("#hide0").hide();
+                $("#show66").show();
+            });
+        }
+        function showtext() {
+            $("#text0").show(10, function () {
+                $("#hide0").show();
+                $("#show66").hide();
+            });
+        }
+
+        $("#hide0").bind("click", hidetext);
+        $("#show0").bind("click", showtext);
+
+    })</script>
+
+<div class="jumbotron">
+    <h3 class="text-center">Copyright &copy; 2019.Игитян Ваге</h3>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</body>
+
+</html>
